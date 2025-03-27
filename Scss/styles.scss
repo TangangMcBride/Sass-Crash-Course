@@ -20,8 +20,7 @@ a {
   text-decoration: none;
 }
 .showcase {
-  background-color: $primary-color;
-  color: #fff;
+  @include set($primary-color);
   height: 600px;
 
   nav {
