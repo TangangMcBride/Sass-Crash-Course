@@ -1,0 +1,71 @@
+@import "config";
+@import "utilities";
+@import "buttons";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $light-color;
+  font-family: $font-stack;
+  line-height: 1.6;
+}
+.logo {
+  width: 200px;
+  height: 100px;
+}
+a {
+  text-decoration: none;
+}
+.showcase {
+  background-color: $primary-color;
+  color: #fff;
+  height: 600px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      list-style: none;
+    }
+    li {
+      padding: 15px;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+  A {
+    color: #fff;
+  }
+
+  .showcase-content {
+    height: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 40%;
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1100px;
+  padding: 0 30px;
+  margin: 0 auto;
+  overflow: hidden;
+}
